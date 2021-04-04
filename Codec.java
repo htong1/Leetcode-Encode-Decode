@@ -1,3 +1,4 @@
+import java.util.HashMap;
 public class Codec {
 HashMap<String, String> map = new HashMap<String, String>();
     // Encodes a URL to a shortened URL.
