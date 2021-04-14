@@ -7,8 +7,8 @@ class Main {
     yay.decode(yay.encode("https://www.youtube.com/watch?v=pBdKnPcNyl8"));
     int[] nums = {1,2,2,5,6,6,5,7,7};
     Duplicate sad = new Duplicate();
-   sad.containsDuplicate(nums);
+   System.out.println(sad.containsDuplicate(nums));
    singleNum welp = new singleNum();
-   welp.findSingle(nums);
+   System.out.println("The only unique number in this array is " + welp.findSingle(nums));
   }
 }
