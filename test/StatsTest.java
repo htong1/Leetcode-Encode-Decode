@@ -1,5 +1,6 @@
 package test;
 import guava.math.Stats;
+import java.util.*;
 
 public class StatsTest {
     public static void main(String [] args){
@@ -17,5 +18,17 @@ public class StatsTest {
        int welp2 = 0;
        welp2 = Stats.max(arr);
        System.out.println("Max:" + welp2);
+       int middle = 0;
+       middle = Stats.median(arr);
+       System.out.println("Median:" + middle);
+       ArrayList<Integer> list = new ArrayList<Integer>();
+        list.add(1);
+        list.add(2);
+        list.add(4);
+        list.add(7);
+        list.add(9);
+        Iterator<Integer> iterator = list.iterator();
+        double itMean = Stats.itmeanOf(iterator);
+        System.out.println("Mean found using iterator: " + itMean);
     }
 }
