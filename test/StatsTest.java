@@ -30,5 +30,7 @@ public class StatsTest {
         Iterator<Integer> iterator = list.iterator();
         double itMean = Stats.itmeanOf(iterator);
         System.out.println("Mean found using iterator: " + itMean);
+        double iterableMean = Stats.iterablemeanOf(list);
+        System.out.println("Iterable mean:" + iterableMean);
     }
 }

@@ -57,4 +57,12 @@ public class Stats {
     num = num/length;
     return num;
 }
+
+public static double iterablemeanOf(Iterable<? extends Number> values){
+    double num = 0;
+    for (int i = 0; i < values.length; i++) {
+        num += values.get(i);
+    }
+    return num = num / values.length;
+}
 }
